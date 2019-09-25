@@ -8,53 +8,50 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ImageView
+        android:id="@+id/t_donut"
+        android:layout_below="@id/choose_desert"
+        android:padding="@dimen/padding_regular"
+        android:text="Donuts are glazed and sprinkled with toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/donut"
+        app:srcCompat="@drawable/doughnut" />
+
     <TextView
-        android:id="@id/choose_desert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/text_padding"
-        android:text="@string/dessert_name"
-        android:text_size="24sp" />
+        android:layout_below="@id/choose_desert"
+        android:layout_toRightOf="@id/donut"
+        android:text="@string/dessert_name" />
 
     <ImageView
         android:id="@+id/ice_cream"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/donut"
-        android:padding="10dp"
         android:contentDescription="IceCream Sandwitches have chocolate in them"
-        android:onClick="showDonutOrder"
+        android:padding="@dimen/padding_regular"
         app:srcCompat="@drawable/icecream" />
 
     <TextView
-        android:id="@id/t_donut"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="35dp"
-        android:layout_below="@id/choose_dessert"
-        android:layout_toRightOf="@id/donut"
-        android:text="Donuts are glazed and sprinkled with candy"
-        android:layout_toEndOf="@id/donut" />
-
-    <ImageView
-        android:layout_below="@id/choose_desert"
-        android:id="@+id/t_donut"
-        android:padding="35dp"
-        android:text="Donuts are glazed and sprinkled with toppings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_toRightOf="@id/donut"
-        android:layout_toEndOf="@id/donut"
-        app:srcCompat="@drawable/doughnut" />
-
-    <ImageView
-        android:id="@+id/frozen_yorghut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/donut"
-        android:contentDescription="IceCream Sandwitches have chocolate in them"
-        android:padding="10pd"
+        android:padding="@dimen/text_padding"
+        android:text="@string/dessert_name"
+        android:layout_toRightOf="@id/ice_cream"
+        android:text_size="24sp" />
 
+
+    <ImageView
+        android:id="@+id/froyo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ice_cream"
+        android:contentDescription="Froyo is premium self-server frozen yoguurt"
+        android:padding="@dimen/padding_regular"
         app:srcCompat="@drawable/froyo" />
 
 </RelativeLayout>
