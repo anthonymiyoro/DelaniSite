@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Draw It Cafe</string>
+    <string name="action_settings">Settings</string>
+    <string name="dessert_name">Choose Dessert</string>
+</resources>

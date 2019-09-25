@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@id/choose_desert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:text="@string/dessert_name"
+        android:text_size="24sp" />
+
+    <ImageView
+        android:id="@+id/ice_cream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donut"
+        android:padding="10dp"
+        android:contentDescription="IceCream Sandwitches have chocolate in them"
+        android:onClick="showDonutOrder"
+        app:srcCompat="@drawable/icecream" />
+
+    <TextView
+        android:id="@id/t_donut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="35dp"
+        android:layout_below="@id/choose_dessert"
+        android:layout_toRightOf="@id/donut"
+        android:text="Donuts are glazed and sprinkled with candy"
+        android:layout_toEndOf="@id/donut" />
+
+    <ImageView
+        android:layout_below="@id/choose_desert"
+        android:id="@+id/t_donut"
+        android:padding="35dp"
+        android:text="Donuts are glazed and sprinkled with toppings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/donut"
+        android:layout_toEndOf="@id/donut"
+        app:srcCompat="@drawable/doughnut" />
+
+    <ImageView
+        android:id="@+id/frozen_yorghut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/donut"
+        android:contentDescription="IceCream Sandwitches have chocolate in them"
+        android:padding="10pd"
+
+        app:srcCompat="@drawable/froyo" />
+
+</RelativeLayout>
