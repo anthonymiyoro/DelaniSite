@@ -8,8 +8,22 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text_intro"
+        android:padding="@dimen/text_padding" />
+
+    <TextView
+        android:id="@+id/choose_desert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/text_padding"
+        android:layout_below="@+id/text_intro"
+        android:text="Choose a desert" />
+
     <ImageView
-        android:id="@+id/t_donut"
+        android:id="@+id/donut"
         android:layout_below="@id/choose_desert"
         android:padding="@dimen/padding_regular"
         android:text="Donuts are glazed and sprinkled with toppings"
